@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "development_n": 563,
+  "holdout_n": 159,
+  "holdout_evaluated": false,
+  "inner_search_assignment_checks": 99,
+  "prediction_files_checked": 60,
+  "outer_refit_max_prediction_difference": 0.0,
+  "modeling_sha256": "84d8c11bcc937baee19eba13d2801e917b223b3feaf09fa5a61b40a0fc4ee2e1",
+  "split_sha256": "f19d1f21d5d874b3b4f3424518a9b28c30f057a081560655167db8fd31593a66",
+  "scripts_sha256": {
+    "stage2_models.py": "7059296bbcf10411533361728cc2e8d61f61fdd76ed6a9243c1127fdd1e43669",
+    "stage2_analysis.py": "f8277ac40e2c6e7fbd8cb7d3d1f6f1f330b8386f886c48efb58d69b15c92f002",
+    "verify_stage2.py": "3c4fae23d3ed9f82e710f0e9ef9452044e1261ebb62e6c2476734a4ab10d9127"
+  }
+}

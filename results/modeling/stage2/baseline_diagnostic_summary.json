@@ -1,0 +1,32 @@
+{
+  "original_pooled": {
+    "r2": 0.18141655210287788,
+    "rmse": 12.172717328872988,
+    "mae": 9.562631796981876
+  },
+  "original_fold_mean": {
+    "r2": 0.04453956723771897,
+    "rmse": 12.025653295553305,
+    "mae": 9.557975341991767
+  },
+  "dummy": {
+    "r2": -0.03382422967254861,
+    "rmse": 13.679789382617209,
+    "mae": 10.74365419275281
+  },
+  "physics_inverse_max_error": 2.2737367544323206e-13,
+  "repeated_recipe_diagnostic": {
+    "rows_in_repeated_recipes": 51,
+    "unique_recipes": 533,
+    "empirical_same_input_target_variation_rmse": 1.1378537778012612
+  },
+  "source_impact": {
+    "top5_sse_share": 0.35017089159458165,
+    "top5_rows": 96,
+    "macro_source_mae": 9.794283900200469,
+    "source_count": 54,
+    "source_mean_bias_sse_fraction": 0.7232013568420128,
+    "source_target_mean_variance_fraction": 0.6155757448133095
+  },
+  "holdout_evaluated": false
+}

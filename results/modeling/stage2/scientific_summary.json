@@ -1,0 +1,40 @@
+{
+  "best_original_nested": {
+    "representation": "Hybrid",
+    "model": "XGBoost",
+    "pooled_r2": 0.24460515256922644,
+    "pooled_rmse": 11.693460871847577,
+    "pooled_mae": 9.24607988171213,
+    "r2_mean": 0.1110598363478342,
+    "r2_sd": 0.40625529899310475,
+    "rmse_mean": 11.522602230275488,
+    "rmse_sd": 2.1884515839086505,
+    "mae_mean": 9.240832140038801,
+    "mae_sd": 2.131807072344843
+  },
+  "nested_repeated_summary": {
+    "Hybrid": {
+      "mean": 12.087144075180932,
+      "std": 0.3516048908424778,
+      "min": 11.693460871847577,
+      "max": 12.369928395121134
+    },
+    "Physics": {
+      "mean": 12.031260169812228,
+      "std": 0.0726217460785985,
+      "min": 11.951430072488666,
+      "max": 12.093407732377916
+    },
+    "Raw": {
+      "mean": 12.672507769953265,
+      "std": 0.5804786293482146,
+      "min": 12.32536712712717,
+      "max": 13.34264175264621
+    }
+  },
+  "holdout_evaluated": false,
+  "searches": 99,
+  "trials": 990,
+  "all_searches_complete": true,
+  "selection_caveat": "families and per-representation candidates screened on development; retain holdout for final evaluation"
+}

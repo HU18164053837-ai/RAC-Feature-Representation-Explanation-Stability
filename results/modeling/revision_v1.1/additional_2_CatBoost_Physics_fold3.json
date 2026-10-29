@@ -1,0 +1,8 @@
+{
+  "configuration": "additional_2",
+  "family": "CatBoost",
+  "representation": "Physics",
+  "fold": 3,
+  "model_sha256": "73bc96cbfd8d711115c1c3ff47f1d46005565cbed5a94f950551b9307abe63ce",
+  "max_additivity_error": 3.552713678800501e-15
+}

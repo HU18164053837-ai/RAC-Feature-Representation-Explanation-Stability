@@ -1,0 +1,8 @@
+{
+  "configuration": "additional_1",
+  "family": "XGBoost",
+  "representation": "Raw",
+  "fold": 1,
+  "model_sha256": "5e32db9e59a9f7801cede5e1f2cc759669cc615df782ce2edfa938bca9c82914",
+  "max_additivity_error": 3.552713678800501e-15
+}

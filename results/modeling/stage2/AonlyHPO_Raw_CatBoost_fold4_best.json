@@ -1,0 +1,11 @@
+{
+  "params": {
+    "iterations": 100,
+    "depth": 4,
+    "learning_rate": 0.016575429181845826,
+    "l2_leaf_reg": 21.08767142198285
+  },
+  "inner_pooled_rmse": 13.793046866604417,
+  "trials": 10,
+  "seed": 20261027
+}

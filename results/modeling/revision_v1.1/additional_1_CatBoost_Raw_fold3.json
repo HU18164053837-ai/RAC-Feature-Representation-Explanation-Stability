@@ -1,0 +1,8 @@
+{
+  "configuration": "additional_1",
+  "family": "CatBoost",
+  "representation": "Raw",
+  "fold": 3,
+  "model_sha256": "84ced4d8d45e81c2d741adefc07afeac815e005a9e0418082b9faccdcd7635c1",
+  "max_additivity_error": 3.552713678800501e-15
+}

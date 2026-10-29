@@ -1,0 +1,8 @@
+{
+  "configuration": "additional_2",
+  "family": "XGBoost",
+  "representation": "Physics",
+  "fold": 4,
+  "model_sha256": "7133df475004997cc883ab8c46c6d70fc7e7b71e3b0118a3ecfd5da7c9a371dc",
+  "max_additivity_error": 3.552713678800501e-15
+}

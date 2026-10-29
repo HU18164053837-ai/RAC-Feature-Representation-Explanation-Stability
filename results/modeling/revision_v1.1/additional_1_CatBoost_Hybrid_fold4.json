@@ -1,0 +1,8 @@
+{
+  "configuration": "additional_1",
+  "family": "CatBoost",
+  "representation": "Hybrid",
+  "fold": 4,
+  "model_sha256": "8d0dc1637d30910cff7fd43ee471e094c3195185a220be8410085871775a6696",
+  "max_additivity_error": 1.7763568394002505e-15
+}

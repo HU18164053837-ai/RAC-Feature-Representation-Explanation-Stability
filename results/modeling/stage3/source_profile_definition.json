@@ -1,0 +1,20 @@
+[
+  {
+    "representation": "Raw",
+    "min_source_n": 5,
+    "eligible_sources": 42,
+    "threshold_rmse": 10.615568208143294
+  },
+  {
+    "representation": "Physics",
+    "min_source_n": 5,
+    "eligible_sources": 42,
+    "threshold_rmse": 9.767385641130232
+  },
+  {
+    "representation": "Hybrid",
+    "min_source_n": 5,
+    "eligible_sources": 42,
+    "threshold_rmse": 9.339979017870345
+  }
+]

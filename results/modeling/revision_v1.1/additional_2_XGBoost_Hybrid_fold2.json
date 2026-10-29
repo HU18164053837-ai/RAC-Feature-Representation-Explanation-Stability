@@ -1,0 +1,8 @@
+{
+  "configuration": "additional_2",
+  "family": "XGBoost",
+  "representation": "Hybrid",
+  "fold": 2,
+  "model_sha256": "bd72ff495567dc6366ea5f985de20d316acd1c746bd8daf64c1503261d4a465f",
+  "max_additivity_error": 3.552713678800501e-15
+}

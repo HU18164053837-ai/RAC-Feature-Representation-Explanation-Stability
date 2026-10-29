@@ -1,0 +1,35 @@
+{
+  "version": "cs_v1",
+  "date": "2026-10-23",
+  "initial_candidates": 980,
+  "A": 603,
+  "B": 119,
+  "C": 258,
+  "modeling_samples": 722,
+  "RAC": 536,
+  "controls": 186,
+  "sources": 67,
+  "validation_groups": 63,
+  "raw_sha256": "6de1637b6ec7c605b3c8596a2f76ef07e10a99ff6580e4f15a96252094706c92",
+  "modeling_sha256": "84d8c11bcc937baee19eba13d2801e917b223b3feaf09fa5a61b40a0fc4ee2e1",
+  "raw_predictors": [
+    "cement",
+    "fly_ash",
+    "slag",
+    "silica_fume",
+    "metakaolin",
+    "natural_coarse",
+    "recycled_coarse",
+    "natural_fine",
+    "recycled_fine",
+    "water"
+  ],
+  "target": "cs_mpa",
+  "known_critical_issues_remaining_included": 0,
+  "provenance_sha256": {
+    "applied_numeric_corrections.csv": "a4bd8463221bf81ff5eb93609b1aa2770068c0fad3f2707e84f9014dccc758ed",
+    "corrected_draft_remaining_conflicts.csv": "b0ec894ce3ce906cad16eb4ba9e395a035641b9f2df0ac6f1d361946ce702136",
+    "row_verification_ledger.csv": "f59a20632aa0713713a02c6adfbd790fc785aa6b6d788e01c4b1f3606141ce1b"
+  },
+  "policy": "CS-only v1, not certification of all source data. No source retrieval required. Structural zero convention disclosed; SP/nominalwb/other outcomes omitted."
+}

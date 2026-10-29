@@ -1,0 +1,139 @@
+{
+  "status": "locked_before_prediction",
+  "timestamp_utc": "2026-10-23T11:40:31.850574+00:00",
+  "stage3_lock_sha256": "3808e10b16d90a1b24ed1a0db8600dfdbb7c24c6f988da9a7a5e2586d9224de4",
+  "modeling_sha256": "84d8c11bcc937baee19eba13d2801e917b223b3feaf09fa5a61b40a0fc4ee2e1",
+  "split_sha256": "f19d1f21d5d874b3b4f3424518a9b28c30f057a081560655167db8fd31593a66",
+  "development_n": 563,
+  "test_n": 159,
+  "development_sources": 54,
+  "test_sources": 13,
+  "development_groups": 50,
+  "test_groups": 13,
+  "overlap": {
+    "source_overlap": 0,
+    "validation_group_overlap": 0,
+    "rounded_recipe_overlap": 0
+  },
+  "models": [
+    {
+      "representation": "Raw",
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 2,
+        "learning_rate": 0.022430297860527214,
+        "min_child_weight": 9.526374943882885,
+        "subsample": 0.8299339903818904,
+        "colsample_bytree": 0.609772070183501,
+        "reg_lambda": 0.6532614741902852
+      },
+      "features": [
+        "cement",
+        "fly_ash",
+        "slag",
+        "silica_fume",
+        "metakaolin",
+        "natural_coarse",
+        "recycled_coarse",
+        "natural_fine",
+        "recycled_fine",
+        "water"
+      ],
+      "full_development_refit": true,
+      "development_prediction_difference_from_locked": 0.0,
+      "model_sha256": "fde64019b7a43872c1d4d4487f703235e7cbce868b4b686d0e4de4a0329e5f78"
+    },
+    {
+      "representation": "Physics",
+      "parameters": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.0428354340591058,
+        "min_child_weight": 12.52682725954992,
+        "subsample": 0.9760631014439113,
+        "colsample_bytree": 0.6997974144253437,
+        "reg_lambda": 0.13530717081595067
+      },
+      "features": [
+        "binder_mass",
+        "reported_water_binder",
+        "aggregate_binder",
+        "fine_fraction",
+        "recycled_coarse_fraction",
+        "recycled_fine_fraction",
+        "fly_ash_binder_fraction",
+        "slag_binder_fraction",
+        "silica_fume_binder_fraction",
+        "metakaolin_binder_fraction"
+      ],
+      "full_development_refit": true,
+      "development_prediction_difference_from_locked": 0.0,
+      "model_sha256": "a26376356b5d1e0faa25fc85dd51bcf0c507a4cc6c02851a47e9c8420cea470e"
+    },
+    {
+      "representation": "Hybrid",
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 2,
+        "learning_rate": 0.016815809121133275,
+        "min_child_weight": 2.8875505703725484,
+        "subsample": 0.9790016413030238,
+        "colsample_bytree": 0.8935427704528337,
+        "reg_lambda": 0.15766195301309524
+      },
+      "features": [
+        "cement",
+        "fly_ash",
+        "slag",
+        "silica_fume",
+        "metakaolin",
+        "natural_coarse",
+        "recycled_coarse",
+        "natural_fine",
+        "recycled_fine",
+        "water",
+        "binder_mass",
+        "reported_water_binder",
+        "aggregate_binder",
+        "fine_fraction",
+        "recycled_coarse_fraction",
+        "recycled_fine_fraction",
+        "fly_ash_binder_fraction",
+        "slag_binder_fraction",
+        "silica_fume_binder_fraction",
+        "metakaolin_binder_fraction"
+      ],
+      "full_development_refit": true,
+      "development_prediction_difference_from_locked": 0.0,
+      "model_sha256": "a0512a72c5dfd73f580c9b1982d58ce90c2c651496c1964323054f3b6a3aed74"
+    }
+  ],
+  "selection_rule": "all three previously locked XGBoost representations; no post-test selection",
+  "preprocessing": "deterministic dose-defined features; no scaling, fitted imputation or feature selection",
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 20261023,
+  "bootstrap_unit": "validation_group",
+  "primary_metric": "pooled RMSE",
+  "secondary_metrics": [
+    "R2",
+    "MAE",
+    "source macro MAE",
+    "RAC/control subgroup"
+  ],
+  "comparisons": [
+    [
+      "Physics",
+      "Raw"
+    ],
+    [
+      "Hybrid",
+      "Raw"
+    ],
+    [
+      "Hybrid",
+      "Physics"
+    ]
+  ],
+  "uncertainty": "paired percentile cluster bootstrap; conditional on fitted models and observed test groups; not individual prediction intervals",
+  "validation_label": "source-disjoint internal holdout from the same compiled database; not a newly collected external dataset"
+}

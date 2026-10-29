@@ -1,0 +1,74 @@
+{
+  "development_n": 563,
+  "holdout_evaluated": false,
+  "outer_models": 30,
+  "new_hpo_trials": 0,
+  "primary_family": "XGBoost",
+  "sensitivity_family": "CatBoost",
+  "source_shift_nine_tests_all_intervals_include_zero": true,
+  "source_shift_min_BH_q": 0.8658170914542728,
+  "fold_stability": [
+    {
+      "family": "CatBoost",
+      "representation": "Hybrid",
+      "mean_spearman": 0.9232105837055327,
+      "min_spearman": 0.8973298866996882,
+      "max_spearman": 0.9578630549285175,
+      "mean_kendall": 0.7832342656672507,
+      "mean_top3_overlap": 0.5666666666666667,
+      "mean_top5_overlap": 0.76
+    },
+    {
+      "family": "CatBoost",
+      "representation": "Physics",
+      "mean_spearman": 0.8484848484848484,
+      "min_spearman": 0.6,
+      "max_spearman": 0.9757575757575757,
+      "mean_kendall": 0.76,
+      "mean_top3_overlap": 0.6666666666666666,
+      "mean_top5_overlap": 0.86
+    },
+    {
+      "family": "CatBoost",
+      "representation": "Raw",
+      "mean_spearman": 0.9199999999999997,
+      "min_spearman": 0.8424242424242423,
+      "max_spearman": 0.9515151515151514,
+      "mean_kendall": 0.8133333333333332,
+      "mean_top3_overlap": 0.8,
+      "mean_top5_overlap": 0.86
+    },
+    {
+      "family": "XGBoost",
+      "representation": "Hybrid",
+      "mean_spearman": 0.9330487816449488,
+      "min_spearman": 0.8792779862128546,
+      "max_spearman": 0.9620158634441753,
+      "mean_kendall": 0.8120579685133388,
+      "mean_top3_overlap": 0.6666666666666667,
+      "mean_top5_overlap": 0.8
+    },
+    {
+      "family": "XGBoost",
+      "representation": "Physics",
+      "mean_spearman": 0.953255848757179,
+      "min_spearman": 0.9118583155200968,
+      "max_spearman": 0.9878787878787878,
+      "mean_kendall": 0.8614941543707548,
+      "mean_top3_overlap": 0.7333333333333334,
+      "mean_top5_overlap": 0.9200000000000002
+    },
+    {
+      "family": "XGBoost",
+      "representation": "Raw",
+      "mean_spearman": 0.9319791547283769,
+      "min_spearman": 0.8267515394048879,
+      "max_spearman": 0.9878787878787878,
+      "mean_kendall": 0.8433648274558037,
+      "mean_top3_overlap": 0.8666666666666666,
+      "mean_top5_overlap": 0.9200000000000002
+    }
+  ],
+  "common_input_binder_top1_all_30_models": true,
+  "optimization_executed": false
+}

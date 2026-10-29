@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "development_n": 563,
+  "holdout_n": 159,
+  "holdout_evaluated": false,
+  "outer_models_checked": 30,
+  "native_shap_contributions_checked": 45040,
+  "group_game_values_checked": 10134,
+  "permutation_runs_checked": 4640,
+  "stage2_trials_unchanged": 990,
+  "max_native_shap_additivity_error": 7.2479248046875e-05,
+  "max_stage2_oof_prediction_difference": 0.0,
+  "figures": [
+    {
+      "name": "Figure_A_validation_gap",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        1984
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    },
+    {
+      "name": "Figure_B_sources_and_errors",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        4086
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    },
+    {
+      "name": "Figure_C_SHAP_comparison",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        3425
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    },
+    {
+      "name": "Figure_D_dependence",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        3921
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    },
+    {
+      "name": "Figure_E_explanation_stability",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        4275
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    },
+    {
+      "name": "Figure_S1_all_shift_associations",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        3661
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    },
+    {
+      "name": "Figure_S2_CatBoost_SHAP",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        3425
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    },
+    {
+      "name": "Figure_S3_common_input_material_Shapley",
+      "width_mm": 182.99998960000002,
+      "pixels": [
+        4322,
+        1984
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_editable_text": true
+    }
+  ],
+  "pdf_text_check": "PASS",
+  "modeling_sha256": "84d8c11bcc937baee19eba13d2801e917b223b3feaf09fa5a61b40a0fc4ee2e1",
+  "split_sha256": "f19d1f21d5d874b3b4f3424518a9b28c30f057a081560655167db8fd31593a66",
+  "scripts_sha256": {
+    "stage3_compute.py": "96f9f9f3e517eb76c86acb5d8d0c3f9276205cbbafa7731fd2e13f307b3beb35",
+    "stage3_figures.py": "efd3dd39d34192a5801a5de1d39dcc51b071fa0215a1710e211b35a85c7a8928",
+    "stage3_group_shap.py": "56e702a462759d11c3ef23019f62664d35b9c545bad78d8ef3716f21800d45a3",
+    "stage3_reports.py": "612bcc91fdb7284b7570e8965ebf6a6b7c49b4008227d1a60d5c3dc58cc18727",
+    "stage3_summarize.py": "3400f2bc6a3a52c3764f08ebf5c49ddb1f3105a957c7f8e3556a5712dff088f8",
+    "verify_stage3.py": "3b956ece32cfa164d2b7f418f0eb3968f976460d30bb95f93f8a466bfda8ca17"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "isolated_copy": true,
+  "originals_untouched": true,
+  "byte_identical_files": {
+    "modeling.csv": "84d8c11bcc937baee19eba13d2801e917b223b3feaf09fa5a61b40a0fc4ee2e1",
+    "classification_all_980.csv": "f83227a4840afc885ecfb5258efa29a8f0e3718ede05da88493802018bd7a9a5",
+    "processing_log.csv": "0da0d1755b4388b2fcc94390bc39d6c782d5d756aa8aa80cd9559321515cab03",
+    "existing_issue_dispositions.csv": "63b82f400a6641313d55ddfe4c539ea58a79b309e06caa578419038a6f658c0a",
+    "exclusion_summary.csv": "65705d8a6f7ec495ba83e48ebfc9163004271d05a805aa6b322f8b437cf2eb69",
+    "data_dictionary.csv": "12728c199e12338efd9707dc8d2b1e048eca5700d07138be4a4c074757151806"
+  }
+}

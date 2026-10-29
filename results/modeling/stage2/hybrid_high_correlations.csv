@@ -1,0 +1,10 @@
+feature_a,feature_b,spearman
+fly_ash,fly_ash_binder_fraction,0.9928956076530958
+slag,slag_binder_fraction,0.999640664032013
+silica_fume,silica_fume_binder_fraction,0.9988463647737985
+metakaolin,metakaolin_binder_fraction,0.9999990873026919
+natural_coarse,recycled_coarse,-0.9219755006517547
+natural_coarse,recycled_coarse_fraction,-0.9572449489695596
+recycled_coarse,recycled_coarse_fraction,0.9749021660403142
+recycled_fine,recycled_fine_fraction,0.9997864845480665
+binder_mass,aggregate_binder,-0.9371322239792421

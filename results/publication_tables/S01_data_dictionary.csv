@@ -1,0 +1,17 @@
+﻿field,unit,role,definition
+cement,kg/m3,predictor,"Reported cement product dose; may include blended cement, not necessarily pure OPC"
+fly_ash,kg/m3,predictor,Separately reported fly ash
+slag,kg/m3,predictor,Separately reported slag
+silica_fume,kg/m3,predictor,Silica fume
+metakaolin,kg/m3,predictor,CC mapped to metakaolin for included sources
+natural_coarse,kg/m3,predictor,Natural coarse aggregate
+recycled_coarse,kg/m3,predictor,Recycled coarse aggregate
+natural_fine,kg/m3,predictor,Natural fine aggregate
+recycled_fine,kg/m3,predictor,Recycled fine aggregate
+water,kg/m3,predictor,Reported mixing-water dose; effective/total basis may vary by study
+cs_mpa,MPa,target,28day reported compressive strength; specimen geometry varies by study
+source_id,,group_only,Publication identity repaired where established; never model input
+validation_group,,group_only,Connected publications sharing exact recipes
+category,,metadata,A direct; B after evidenced processing; zero decoding is routine database normalization
+age_days,day,constant_metadata,28; excluded from predictive inputs
+is_rac,,stratum,Positive recycled coarse or fine dose; controls retained and reported separately

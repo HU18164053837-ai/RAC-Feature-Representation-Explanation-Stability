@@ -1,0 +1,14 @@
+{
+  "params": {
+    "n_estimators": 100,
+    "max_depth": 3,
+    "learning_rate": 0.0428354340591058,
+    "min_child_weight": 12.52682725954992,
+    "subsample": 0.9760631014439113,
+    "colsample_bytree": 0.6997974144253437,
+    "reg_lambda": 0.13530717081595067
+  },
+  "inner_pooled_rmse": 11.056776424446637,
+  "trials": 10,
+  "seed": 20261023
+}

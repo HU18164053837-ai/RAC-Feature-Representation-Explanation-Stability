@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "original_game_permutation_check_max_difference": 2.3841857821338408e-07,
+  "development_feature_inverse_max_error": 2.2737367544323206e-13,
+  "original_fold_importance_max_difference": 0.0,
+  "background_membership_checks": 15,
+  "development_n": 563,
+  "frozen_matrix_n": 722,
+  "holdout_n": 159,
+  "test_predictions_rerun": false,
+  "v1_0_package_hashes_unchanged": true,
+  "receipt_sha256": "88709f3f5167bbf2124bba61daf8f8e0452518ac57c37a5696782b39d455fa17",
+  "metrics_sha256": "e786325ad3b28df09e0928821223b21d119c2be68f2626137d5ab70c184bcfe9",
+  "source_code_sha256": "7e103d4f2b77891688dc6b15926f18406a9e0628cbe917974485f81a983f7dfc"
+}

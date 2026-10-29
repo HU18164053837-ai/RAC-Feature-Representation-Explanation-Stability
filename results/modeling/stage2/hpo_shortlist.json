@@ -1,0 +1,20 @@
+{
+  "rule": "three families with lowest mean grouped pooled RMSE over representations; development-only screening",
+  "ranking": {
+    "CatBoost": 12.012182335041878,
+    "XGBoost": 12.129798410422069,
+    "SVR": 12.256242950855615,
+    "Ridge": 12.315633793112648,
+    "RandomForest": 12.41549918765329,
+    "LightGBM": 12.46044903255852
+  },
+  "selected": [
+    "CatBoost",
+    "XGBoost",
+    "SVR"
+  ],
+  "trials": 10,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "selection_caveat": "family screening used these development folds; nested estimates condition on screened families"
+}

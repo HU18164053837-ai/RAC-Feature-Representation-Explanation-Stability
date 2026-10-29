@@ -1,0 +1,11 @@
+validation,fold,n_valid,validation_rows_seen_source,validation_rows_seen_recipe
+Group,1,113,0,0
+Group,2,113,0,0
+Group,3,113,0,0
+Group,4,112,0,0
+Group,5,112,0,0
+Random,1,113,112,9
+Random,2,113,113,9
+Random,3,113,113,10
+Random,4,112,111,13
+Random,5,112,112,5

@@ -1,0 +1,226 @@
+{
+  "status": "complete",
+  "timestamp_utc": "2026-10-23T11:40:31.850574+00:00",
+  "stage3_lock_sha256": "3808e10b16d90a1b24ed1a0db8600dfdbb7c24c6f988da9a7a5e2586d9224de4",
+  "modeling_sha256": "84d8c11bcc937baee19eba13d2801e917b223b3feaf09fa5a61b40a0fc4ee2e1",
+  "split_sha256": "f19d1f21d5d874b3b4f3424518a9b28c30f057a081560655167db8fd31593a66",
+  "development_n": 563,
+  "test_n": 159,
+  "development_sources": 54,
+  "test_sources": 13,
+  "development_groups": 50,
+  "test_groups": 13,
+  "overlap": {
+    "source_overlap": 0,
+    "validation_group_overlap": 0,
+    "rounded_recipe_overlap": 0
+  },
+  "models": [
+    {
+      "representation": "Raw",
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 2,
+        "learning_rate": 0.022430297860527214,
+        "min_child_weight": 9.526374943882885,
+        "subsample": 0.8299339903818904,
+        "colsample_bytree": 0.609772070183501,
+        "reg_lambda": 0.6532614741902852
+      },
+      "features": [
+        "cement",
+        "fly_ash",
+        "slag",
+        "silica_fume",
+        "metakaolin",
+        "natural_coarse",
+        "recycled_coarse",
+        "natural_fine",
+        "recycled_fine",
+        "water"
+      ],
+      "full_development_refit": true,
+      "development_prediction_difference_from_locked": 0.0,
+      "model_sha256": "fde64019b7a43872c1d4d4487f703235e7cbce868b4b686d0e4de4a0329e5f78"
+    },
+    {
+      "representation": "Physics",
+      "parameters": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.0428354340591058,
+        "min_child_weight": 12.52682725954992,
+        "subsample": 0.9760631014439113,
+        "colsample_bytree": 0.6997974144253437,
+        "reg_lambda": 0.13530717081595067
+      },
+      "features": [
+        "binder_mass",
+        "reported_water_binder",
+        "aggregate_binder",
+        "fine_fraction",
+        "recycled_coarse_fraction",
+        "recycled_fine_fraction",
+        "fly_ash_binder_fraction",
+        "slag_binder_fraction",
+        "silica_fume_binder_fraction",
+        "metakaolin_binder_fraction"
+      ],
+      "full_development_refit": true,
+      "development_prediction_difference_from_locked": 0.0,
+      "model_sha256": "a26376356b5d1e0faa25fc85dd51bcf0c507a4cc6c02851a47e9c8420cea470e"
+    },
+    {
+      "representation": "Hybrid",
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 2,
+        "learning_rate": 0.016815809121133275,
+        "min_child_weight": 2.8875505703725484,
+        "subsample": 0.9790016413030238,
+        "colsample_bytree": 0.8935427704528337,
+        "reg_lambda": 0.15766195301309524
+      },
+      "features": [
+        "cement",
+        "fly_ash",
+        "slag",
+        "silica_fume",
+        "metakaolin",
+        "natural_coarse",
+        "recycled_coarse",
+        "natural_fine",
+        "recycled_fine",
+        "water",
+        "binder_mass",
+        "reported_water_binder",
+        "aggregate_binder",
+        "fine_fraction",
+        "recycled_coarse_fraction",
+        "recycled_fine_fraction",
+        "fly_ash_binder_fraction",
+        "slag_binder_fraction",
+        "silica_fume_binder_fraction",
+        "metakaolin_binder_fraction"
+      ],
+      "full_development_refit": true,
+      "development_prediction_difference_from_locked": 0.0,
+      "model_sha256": "a0512a72c5dfd73f580c9b1982d58ce90c2c651496c1964323054f3b6a3aed74"
+    }
+  ],
+  "selection_rule": "all three previously locked XGBoost representations; no post-test selection",
+  "preprocessing": "deterministic dose-defined features; no scaling, fitted imputation or feature selection",
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 20261023,
+  "bootstrap_unit": "validation_group",
+  "primary_metric": "pooled RMSE",
+  "secondary_metrics": [
+    "R2",
+    "MAE",
+    "source macro MAE",
+    "RAC/control subgroup"
+  ],
+  "comparisons": [
+    [
+      "Physics",
+      "Raw"
+    ],
+    [
+      "Hybrid",
+      "Raw"
+    ],
+    [
+      "Hybrid",
+      "Physics"
+    ]
+  ],
+  "uncertainty": "paired percentile cluster bootstrap; conditional on fitted models and observed test groups; not individual prediction intervals",
+  "validation_label": "source-disjoint internal holdout from the same compiled database; not a newly collected external dataset",
+  "completed_utc": "2026-10-23T11:40:31.907762+00:00",
+  "test_evaluated": true,
+  "prediction_batches": 1,
+  "predictions_sha256": "613ba341c5f2a0e0784191c7abcab896a883cba098a4c012eb361200766f9aaa",
+  "metrics": [
+    {
+      "model": "Raw",
+      "r2": -0.10037572323954347,
+      "rmse": 20.064937474131725,
+      "mae": 13.998599621274938,
+      "source_macro_mae": 11.97486043912656,
+      "rmse_ci_low": 10.3157541734975,
+      "rmse_ci_high": 30.2970017633052,
+      "mae_ci_low": 7.689367363118078,
+      "mae_ci_high": 21.93215444683136,
+      "r2_ci_low": -0.9042090302696102,
+      "r2_ci_high": 0.1643976024164877
+    },
+    {
+      "model": "Physics",
+      "r2": 0.0658488762829702,
+      "rmse": 18.487401829881875,
+      "mae": 13.090193198821831,
+      "source_macro_mae": 10.286215320391323,
+      "rmse_ci_low": 9.506810426035242,
+      "rmse_ci_high": 26.761585993327444,
+      "mae_ci_low": 7.506798171193578,
+      "mae_ci_high": 19.442791836088432,
+      "r2_ci_low": -0.733424852168852,
+      "r2_ci_high": 0.2189309209015744
+    },
+    {
+      "model": "Hybrid",
+      "r2": 0.04649132318550486,
+      "rmse": 18.67796835609355,
+      "mae": 12.997648995837325,
+      "source_macro_mae": 10.698754251881052,
+      "rmse_ci_low": 9.344347143559986,
+      "rmse_ci_high": 27.994768187006386,
+      "mae_ci_low": 7.44265594777295,
+      "mae_ci_high": 19.865170970993464,
+      "r2_ci_low": -0.6033143918208219,
+      "r2_ci_high": 0.22357386344171917
+    },
+    {
+      "model": "Dummy",
+      "r2": -0.004802928728572242,
+      "rmse": 19.173780738768745,
+      "mae": 12.35742562865154,
+      "source_macro_mae": 11.130795390143476,
+      "rmse_ci_low": 9.294320399888521,
+      "rmse_ci_high": 29.409377756495797,
+      "mae_ci_low": 7.093694542964982,
+      "mae_ci_high": 20.277835045558994,
+      "r2_ci_low": -0.2636916794837973,
+      "r2_ci_high": -6.238900329464952e-05
+    }
+  ],
+  "contrasts": [
+    {
+      "representation_a": "Physics",
+      "representation_b": "Raw",
+      "rmse_a_minus_b": -1.5775356442498492,
+      "ci_low": -4.194691878056858,
+      "ci_high": 1.8246168662235702
+    },
+    {
+      "representation_a": "Hybrid",
+      "representation_b": "Raw",
+      "rmse_a_minus_b": -1.3869691180381736,
+      "ci_low": -2.9473669049369846,
+      "ci_high": 0.7871639929373534
+    },
+    {
+      "representation_a": "Hybrid",
+      "representation_b": "Physics",
+      "rmse_a_minus_b": 0.19056652621167558,
+      "ci_low": -1.1289347232826101,
+      "ci_high": 1.3481677556674179
+    }
+  ],
+  "test_RAC": 138,
+  "test_controls": 21,
+  "test_CS_min": 7.17,
+  "test_CS_max": 108.51,
+  "test_CS_mean": 43.932515723270434,
+  "script_sha256": "7672c4993dc8641bd0d1b40c1b12da9f88014906316d9b696ce8455e69b7c4e5"
+}

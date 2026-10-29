@@ -1,0 +1,41 @@
+[
+  {
+    "representation": "Hybrid",
+    "model": "XGBoost",
+    "parameters": {
+      "n_estimators": 400,
+      "max_depth": 2,
+      "learning_rate": 0.016815809121133275,
+      "min_child_weight": 2.8875505703725484,
+      "subsample": 0.9790016413030238,
+      "colsample_bytree": 0.8935427704528337,
+      "reg_lambda": 0.15766195301309524
+    },
+    "inner_rmse_not_unbiased": 11.732487014552975
+  },
+  {
+    "representation": "Physics",
+    "model": "XGBoost",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 3,
+      "learning_rate": 0.0428354340591058,
+      "min_child_weight": 12.52682725954992,
+      "subsample": 0.9760631014439113,
+      "colsample_bytree": 0.6997974144253437,
+      "reg_lambda": 0.13530717081595067
+    },
+    "inner_rmse_not_unbiased": 11.056776424446637
+  },
+  {
+    "representation": "Raw",
+    "model": "CatBoost",
+    "parameters": {
+      "iterations": 100,
+      "depth": 5,
+      "learning_rate": 0.04654937900558877,
+      "l2_leaf_reg": 2.5969022577316934
+    },
+    "inner_rmse_not_unbiased": 12.12260606907532
+  }
+]

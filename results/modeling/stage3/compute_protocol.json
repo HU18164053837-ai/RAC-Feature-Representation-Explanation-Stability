@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "models": [
+    "XGBoost",
+    "CatBoost"
+  ],
+  "representations": [
+    "Raw",
+    "Physics",
+    "Hybrid"
+  ],
+  "outer_folds": 5,
+  "permutation_repeats": 8,
+  "shap": "native exact training-path TreeSHAP",
+  "holdout_evaluated": false,
+  "modeling_sha256": "84d8c11bcc937baee19eba13d2801e917b223b3feaf09fa5a61b40a0fc4ee2e1",
+  "split_sha256": "f19d1f21d5d874b3b4f3424518a9b28c30f057a081560655167db8fd31593a66"
+}

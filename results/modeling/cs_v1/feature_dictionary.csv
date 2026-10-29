@@ -1,0 +1,41 @@
+representation,field,definition
+Raw,cement,"reported dose, kg/m3"
+Raw,fly_ash,"reported dose, kg/m3"
+Raw,slag,"reported dose, kg/m3"
+Raw,silica_fume,"reported dose, kg/m3"
+Raw,metakaolin,"reported dose, kg/m3"
+Raw,natural_coarse,"reported dose, kg/m3"
+Raw,recycled_coarse,"reported dose, kg/m3"
+Raw,natural_fine,"reported dose, kg/m3"
+Raw,recycled_fine,"reported dose, kg/m3"
+Raw,water,"reported dose, kg/m3"
+Physics,binder_mass,"sum(cement,fly_ash,slag,silica_fume,metakaolin)"
+Physics,reported_water_binder,water/binder_mass; reported water basis varies by source
+Physics,aggregate_binder,sum(all four aggregates)/binder_mass
+Physics,fine_fraction,sum(fine aggregates)/sum(all aggregates)
+Physics,recycled_coarse_fraction,recycled_coarse/sum(coarse aggregates)
+Physics,recycled_fine_fraction,recycled_fine/sum(fine aggregates)
+Physics,fly_ash_binder_fraction,fly_ash/binder_mass
+Physics,slag_binder_fraction,slag/binder_mass
+Physics,silica_fume_binder_fraction,silica_fume/binder_mass
+Physics,metakaolin_binder_fraction,metakaolin/binder_mass
+Hybrid,cement,"reported dose, kg/m3"
+Hybrid,fly_ash,"reported dose, kg/m3"
+Hybrid,slag,"reported dose, kg/m3"
+Hybrid,silica_fume,"reported dose, kg/m3"
+Hybrid,metakaolin,"reported dose, kg/m3"
+Hybrid,natural_coarse,"reported dose, kg/m3"
+Hybrid,recycled_coarse,"reported dose, kg/m3"
+Hybrid,natural_fine,"reported dose, kg/m3"
+Hybrid,recycled_fine,"reported dose, kg/m3"
+Hybrid,water,"reported dose, kg/m3"
+Hybrid,binder_mass,"sum(cement,fly_ash,slag,silica_fume,metakaolin)"
+Hybrid,reported_water_binder,water/binder_mass; reported water basis varies by source
+Hybrid,aggregate_binder,sum(all four aggregates)/binder_mass
+Hybrid,fine_fraction,sum(fine aggregates)/sum(all aggregates)
+Hybrid,recycled_coarse_fraction,recycled_coarse/sum(coarse aggregates)
+Hybrid,recycled_fine_fraction,recycled_fine/sum(fine aggregates)
+Hybrid,fly_ash_binder_fraction,fly_ash/binder_mass
+Hybrid,slag_binder_fraction,slag/binder_mass
+Hybrid,silica_fume_binder_fraction,silica_fume/binder_mass
+Hybrid,metakaolin_binder_fraction,metakaolin/binder_mass

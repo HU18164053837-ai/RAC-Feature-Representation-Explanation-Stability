@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Release candidate; confirm author metadata before public citation."
+title: "Feature Representation and Explanation Stability in Cross-Study Prediction of Recycled Aggregate Concrete Compressive Strength"
+type: software
+version: "1.2-candidate"
+authors:
+  - name: "AUTHOR CONFIRMATION REQUIRED"
+# repository-code: actual URL required after upload
+# doi: issued archive DOI required after deposition
+# license: author-approved code license required
