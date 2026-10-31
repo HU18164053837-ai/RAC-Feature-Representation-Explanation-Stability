@@ -1,27 +1,22 @@
-# GitHub upload guide
+# Maintaining the published GitHub repository
 
-This folder is a local release candidate; Codex has not created a repository, pushed a commit or published aRelease.
+The repository is public at https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability . Initial creation/upload is complete; this is no longer a local folder awaiting its first upload. Original local packaging statements described the 24 October 2026 snapshot and are not the present online state.
 
-Before upload, confirm author metadata and code/model license, inspect DATA_LICENSE.md, run the safe verifier and review RELEASE_CHECKLIST.md. The pending code-license notice is not an open-source license.
+## Proposed updates
 
-## Browser upload
+Clone the actual repository, inspect uncommitted work, fetch main and use a dedicated branch. For example:
 
-Create a repository yourself, choose visibility, then upload the contents of RAC956_GitHub_Ready_v1.2 (not its surroundingZIP). Browser upload limits may make GitHubDesktoporGitmore convenient for hundreds of small result files. Do not upload the validationvenv,privatepapersorworkingproject.
+```sh
+git clone https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability.git
+cd RAC-Feature-Representation-Explanation-Stability
+git switch -c chore/metadata-update
+python scripts/verify_saved_results.py
+```
 
-## Git or GitHub Desktop
+After documented changes, update SHA256 entries for changed covered files, inspect the diff, run the safe gate in a clean checkout, commit and push the branch, then open a PR against main. Do not overwrite another person's work or use a force push. These are maintenance instructions, not a claim these example commands were all executed.
 
-InGitHubDesktop,useanewlocalrepositoryatthisfolderandpublishonlyafterreview.
-Equivalent commands, for you to run after creating the real repository:
+Do not upload local environments, private papers, credentials, ZIP duplicates or unrestricted project folders. The original .gitattributes preserves frozen bytes. No model reruns are needed for metadata changes.
 
-    git init
-    git add .
-    git commit -m "Prepare RAC-956 v1.2 release candidate"
-    git branch -M main
-    git remote add origin ACTUAL_GITHUB_REPOSITORY_URL
-    git push -u origin main
+## Archive and authorization
 
-No commands above have been executed byCodex. Replace the symbolicURLwithyouractualdestination;nevercommitcredentials. Currentlargestfileisunder5MB;noGitLFSisnecessaryforthecuratedpayload. For laterlargearchives,useaReleaseassetorlong-termrepositoryratherthancheckingduplicateZIPsintoGit.
-
-## Versioned archive
-
-Afterlicense/authorapproval,optionallytagaversionandcreateaGitHubRelease,thenarchivewithZenodooraninstitutionalservice. GitHubaloneisnotanautomaticallyissuedDOI. InsertonlyrealverifiedURL/DOIfieldsinREADME,CITATIONandmanuscript. Untilthen,submissionreadinessremainsCONDITIONAL_PASS.
+No new tag, GitHub Release or permanent DOI is claimed. A future versioned GitHub Release plus Zenodo/institutional archival is optional subject to author/rights-holder approval and journal requirements. Populate only an actually issued DOI. Rights-holder approval of software/model licensing remains outstanding; the source dataset's CC BY 4.0 license is separate.
