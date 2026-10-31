@@ -2,7 +2,7 @@
 
 ## Current status (31 October 2026)
 
-The repository is public at https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability . Authors and repository URL are confirmed. No formal software/model license or permanent archive DOI is claimed. Online visibility was read from GitHub repository metadata; it is distinct from the original local packaging acceptance.
+The repository is public at https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability . Authors and repository URL are confirmed. Original code now has an explicitly approved MIT License; excluded model/other assets are not covered and no permanent archive DOI is claimed. Online visibility was read from GitHub repository metadata; it is distinct from the original local packaging acceptance.
 
 The current metadata branch and its clean-checkout execution are documented in Release_Remediation_Report_zh.md. Only documentation, CFF metadata and the corresponding SHA256 inventory may change. The original standard-library verifier is unchanged. It recomputes metrics from saved predictions, never trains, loads a predictive model or generates holdout predictions.
 

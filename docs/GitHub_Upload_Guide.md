@@ -19,4 +19,4 @@ Do not upload local environments, private papers, credentials, ZIP duplicates or
 
 ## Archive and authorization
 
-No new tag, GitHub Release or permanent DOI is claimed. A future versioned GitHub Release plus Zenodo/institutional archival is optional subject to author/rights-holder approval and journal requirements. Populate only an actually issued DOI. Rights-holder approval of software/model licensing remains outstanding; the source dataset's CC BY 4.0 license is separate.
+No new tag, GitHub Release or permanent DOI is claimed. A future versioned GitHub Release plus Zenodo/institutional archival is optional subject to author/rights-holder approval and journal requirements. Populate only an actually issued DOI. Original code is now licensed under the approved MIT LICENSE. The source dataset's CC BY 4.0 license and excluded model/other asset reuse terms remain separate; see docs/License_Scope.md.

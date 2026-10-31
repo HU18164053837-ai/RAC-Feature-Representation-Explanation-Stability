@@ -1,3 +1,5 @@
-# Third-party notices
+# Third-party notices and separate licenses
 
-Source dataset:CCBY4.0with attribution/modification notice in DATA_LICENSE.md. Dependencies retain their own licenses and are installed separately; no runtime binaries are bundled. Study figures derive from recorded outputs, not publisher artwork. Paper PDFs, private downloads, credentials and installed environments are excluded. DOI/academic URLs are scholarly identifiers. The repository is now public. Public visibility does not settle code/model/manuscript ownership or licensing. Rights-holder approval of code/model reuse terms remains outstanding; no blanket open-source grant is asserted.
+Original research code in src/, scripts/ and legacy/ is MIT-licensed under the root LICENSE, following explicit confirmation of joint ownership and authority by Sun Shiqi and Hu Yi. See docs/License_Scope.md for exclusions.
+
+The source Mendeley dataset (10.17632/wc898ff5pj.2) retains CC BY 4.0 terms, attribution and derived-data modification notices in DATA_LICENSE.md. MIT does not replace those terms. Dependencies retain their own licenses and are installed separately; no runtime binaries are bundled. No MIT grant for third-party contributions, cached model binaries, scientific outputs, figures or manuscript assets is inferred from the code approval. Study figures derive from recorded outputs, not publisher artwork. Article PDFs, private downloads, credentials and installed environments are excluded.
