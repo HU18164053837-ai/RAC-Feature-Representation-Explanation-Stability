@@ -1,10 +1,17 @@
 cff-version: 1.2.0
-message: "Release candidate; confirm author metadata before public citation."
+message: "If you use these research materials, please cite this repository and the original dataset separately."
 title: "Feature Representation and Explanation Stability in Cross-Study Prediction of Recycled Aggregate Concrete Compressive Strength"
 type: software
-version: "1.2-candidate"
 authors:
-  - name: "AUTHOR CONFIRMATION REQUIRED"
-# repository-code: actual URL required after upload
-# doi: issued archive DOI required after deposition
-# license: author-approved code license required
+  - family-names: Sun
+    given-names: Shiqi
+    affiliation: "School of Urban Construction, Wuhan University of Science and Technology"
+    email: "plmoknvgc@163.com"
+  - family-names: Hu
+    given-names: Yi
+    affiliation: "College of Plant Protection, Henan Agricultural University"
+    email: "18164053837@163.com"
+repository-code: "https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability"
+url: "https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability"
+
+license: MIT

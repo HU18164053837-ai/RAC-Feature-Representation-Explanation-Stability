@@ -1,6 +1,13 @@
 # RAC-956: feature representation and explanation stability
 
-Local GitHub-ready candidate v1.2. **Not uploaded or publicly archived.** Author metadata, code/model license, repository URL and archive DOI require human confirmation.
+This repository is **public on GitHub**: https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability . It contains the frozen RAC-956 analysis and reproducibility materials supporting a manuscript intended for Computers and Concrete. Public GitHub availability is distinct from permanent archival: no issued archive DOI is supplied or claimed. No software release version or publication date is asserted.
+
+## Authors and declarations
+
+1. **Sun Shiqi** — School of Urban Construction, Wuhan University of Science and Technology; plmoknvgc@163.com.
+2. **Hu Yi** (corresponding author) — College of Plant Protection, Henan Agricultural University; 18164053837@163.com.
+
+Both authors approved submission. There was no external funding and the authors declare no conflicts of interest. The manuscript has not been formally published and is not submitted to or under consideration by another journal. ChatGPT and Codex assisted with code writing/revision, English polishing and manuscript structure under author supervision; AI did not generate or alter research data. Confirmed authorship does not determine code copyright ownership or grant a software license.
 
 ## Study and fixed scope
 
@@ -77,8 +84,8 @@ Feature conversion is `src/run_cs_baseline_v1.py:representations`. Native/common
 
 Original database: Haoyun Fan and ShengKang Zhang, Mendeley Data version 2, DOI [10.17632/wc898ff5pj.2](https://doi.org/10.17632/wc898ff5pj.2), **CC BY 4.0**. `DATA_LICENSE.md` identifies third-party ownership and modifications. Article PDFs and third-party runtime binaries are not redistributed.
 
-Code/model licensing is **pending owner approval**: see `LICENSE_CODE_PENDING.md`. No permissive license has been assigned on the authors' behalf. `CITATION.cff` contains explicit unconfirmed author fields and is a release template, not final citation metadata. Replace placeholders only with verified information.
+Original research code in `src/`, `scripts/` and `legacy/` is licensed under the **MIT License**, copyright (c) 2026 Sun Shiqi and Hu Yi; see `LICENSE` and `docs/License_Scope.md`. Joint ownership and licensing authority were explicitly confirmed. Original/derived data remain under their applicable CC BY 4.0 terms. Dependencies retain their own licenses. MIT does not relicense third-party data, cached models or other excluded research assets. `CITATION.cff` records confirmed authors and the actual URL; its MIT field describes original software only, with no invented DOI or release version.
 
 ## Human release steps
 
-Review `RELEASE_CHECKLIST.md` and `docs/GitHub_Upload_Guide.md`. The user controls actual GitHub upload and any versioned permanent archive. Insert only real repository/release URLs and issued DOIs. The current local candidate is technically verified, but it is not publicly available, licensed as open source or READY FOR SUBMISSION.
+Review `RELEASE_CHECKLIST.md`, `docs/GitHub_Release_QA.md` and `docs/GitHub_Upload_Guide.md`. GitHub publication is complete. MIT approval for original code is complete. Reuse terms of excluded model/other assets and any required permanent archival remain separate; public visibility alone does not establish submission readiness. The documentation remediation is proposed separately through a pull request; scientific files remain frozen.

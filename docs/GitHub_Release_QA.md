@@ -1,27 +1,19 @@
-# GitHub-ready release QA — PASS
+# Release QA: historical packaging and current metadata remediation
 
-This is a local candidate, not a published repository. Code/model licensing, author metadata and real repository/archive identifiers remain pending. Technical packaging PASS does not authorize or claim publication.
+## Current status (31 October 2026)
 
-## Clean-environment verification
+The repository is public at https://github.com/HU18164053837-ai/RAC-Feature-Representation-Explanation-Stability . Authors and repository URL are confirmed. Original code now has an explicitly approved MIT License; excluded model/other assets are not covered and no permanent archive DOI is claimed. Online visibility was read from GitHub repository metadata; it is distinct from the original local packaging acceptance.
 
-A new Python 3.12 virtual environment was created with `python -m venv --without-pip .venv`. From the exported repository root, its interpreter executed:
+The current metadata branch and its clean-checkout execution are documented in Release_Remediation_Report_zh.md. Only documentation, CFF metadata and the corresponding SHA256 inventory may change. The original standard-library verifier is unchanged. It recomputes metrics from saved predictions, never trains, loads a predictive model or generates holdout predictions.
 
-```powershell
-.venv/Scripts/python.exe -I scripts/verify_saved_results.py
-```
+## Historical technical acceptance (24 October 2026)
 
-The actual validation environment is outside the release; the command above is the equivalent portable command. Isolated mode and the standard-library-only checker prevent dependence on project PYTHONPATH or installed scientific packages. The final production stdout is included in the complete submission package as `Clean_Environment_Verification.json`.
+The exported local candidate passed a fresh no-pip Python 3.12 environment check using `.venv/Scripts/python.exe -I scripts/verify_saved_results.py`. At that historical point it had not been uploaded, had no .git directory and had no repository URL or confirmed author metadata. Those statements are historical, not current. The historical stdout remains in the original submission package as Clean_Environment_Verification.json; this remediation does not rewrite that record.
 
-The gate checks manifest hashes, the 722/563/159 counts, A=603/B=119/C=258, 536 RAC rows, source/group/recipe separation, the one-batch receipt, final locked features/parameters and 12 stored metric values. Model fits and new predictions are both zero. This verifies saved evidence, not prospective model performance or third-party experimental truth.
+The historical privacy scan found no personal paths/emails, token/private-key patterns or private article PDFs in that payload. The two author contact emails now added are explicitly supplied and approved for publication by the user. No broad new privacy-scan certification is inferred from the old scan.
 
-## Content and safety
+## Coverage and interpretation
 
-- Source-mapped scientific files are byte-identical; the caption document is explicitly mapped to v1.2.
-- Data provenance, CC BY 4.0 attribution and derived-data changes are separate from pending code/model licensing.
-- No personal absolute user paths, email addresses, detected token/private-key patterns, .env files, runtime environments or temporary caches are bundled.
-- No third-party article full-text PDFs are included. Figure PDFs are retained as scientific assets.
-- Every current file is below 5 MB, well below GitHub's 100 MB per-file limit.
-- The repository has no .git directory and no remote configuration. Zero GitHub account operations, pushes, releases or uploads were executed.
-- Legacy training entry points are marked; default verification cannot launch Optuna or holdout inference.
+Github_Manifest_SHA256.csv covers original release files except itself. The initial .gitattributes was added after local export and is included by this remediation. New documentation is also included; no existing entry is removed. Scientific entries retain their original hashes. Tests, all saved results and the safe verifier remain unchanged. Hashes detect byte changes, not the authenticity of third-party experiments or prospective model reliability.
 
-See `Github_Manifest_SHA256.csv`, `docs/Path_Mapping.csv` and `RELEASE_CHECKLIST.md`. The SHA256 manifest excludes itself. Optional plotting/raw-to-freeze commands are not part of the minimal clean-environment gate; their dependencies and boundary are documented separately.
+The gate verifies 722/563/159 records, 980 classification rows, A=603/B=119/C=258, 536 RAC rows, source/group/recipe separation, one-batch receipt, locked features/parameters and 12 stored metric values. Optional full numerical reproduction and plotting are not rerun during metadata remediation. No HPO, new split, model fit, new prediction or scientific-result regeneration is performed.
